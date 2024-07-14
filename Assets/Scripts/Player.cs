@@ -7,11 +7,14 @@ public class Player : MonoBehaviour
     public float playerSpeed;
     private Rigidbody2D rb;
     private Vector2 playerDirection;
+   
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+       
     }
 
     // Update is called once per frame
@@ -31,6 +34,7 @@ public class Player : MonoBehaviour
         if (collision.tag == "Grass")   
         {
             Debug.Log("On the grass.");
+            ScoreManager.score -= 10;
         }
             
     }
