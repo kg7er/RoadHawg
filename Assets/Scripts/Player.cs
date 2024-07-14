@@ -25,4 +25,13 @@ public class Player : MonoBehaviour
     {
         rb.velocity = new Vector2(playerDirection.x * playerSpeed, 0);
     }
+
+     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Grass")   
+        {
+            Debug.Log("On the grass.");
+        }
+            
+    }
 }

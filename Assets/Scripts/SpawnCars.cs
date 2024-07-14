@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class SpawnCars : MonoBehaviour
@@ -28,7 +27,6 @@ public class SpawnCars : MonoBehaviour
             randomX = -1.5f;
         else
             randomX = 2.25f;
-        Debug.Log(randomX);
 
         float randomY = Random.Range(minY, maxY);
 
