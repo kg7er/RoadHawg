@@ -24,9 +24,9 @@ public class SpawnCars : MonoBehaviour
     void Spawn()
     {
         if (Random.value > 0.5f) // coin flip odds
-            randomX = -1.5f;
+            randomX = -0.1f;
         else
-            randomX = 2.25f;
+            randomX = 1.35f;
 
         float randomY = Random.Range(minY, maxY);
 

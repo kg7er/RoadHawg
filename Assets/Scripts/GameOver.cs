@@ -17,5 +17,6 @@ public class GameOver : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ScoreManager.score = 0;
     }
 }

@@ -33,8 +33,7 @@ public class Player : MonoBehaviour
     {
         if (collision.tag == "Grass")   
         {
-            Debug.Log("On the grass.");
-            ScoreManager.score -= 10;
+            ScoreManager.score -= 3;
         }
             
     }
