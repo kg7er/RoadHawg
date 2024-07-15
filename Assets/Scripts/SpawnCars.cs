@@ -27,7 +27,7 @@ public class SpawnCars : MonoBehaviour
             else
                 SpawnRight();
 
-            timeBetweenSpawn = Random.Range(0.5f, 5.0f);
+            timeBetweenSpawn = Random.Range(1f, 5.0f);
             spawnTime = Time.time + timeBetweenSpawn;
         }
     }
