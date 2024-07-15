@@ -281,10 +281,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowCar: {fileID: 5731206229201298765, guid: 35b4fe5759b42814c98ae3e41e0f2ee1, type: 3}
+  fastCar: {fileID: 5861839489848619523, guid: 51d49d8567e44a240a255a147168fa2f, type: 3}
   maxY: 3.5
   minY: 6
-  randomX: 0
-  timeBetweenSpawn: 7
+  xPos: 0
+  timeBetweenSpawn: 0
 --- !u!1 &234678349
 GameObject:
   m_ObjectHideFlags: 0

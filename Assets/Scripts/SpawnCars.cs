@@ -5,10 +5,16 @@ using UnityEngine;
 public class SpawnCars : MonoBehaviour
 {
     public GameObject slowCar;
+    public GameObject fastCar;
     public float maxY, minY;
-    public float randomX;
+    public float xPos;
     public float timeBetweenSpawn;
-    private float spawnTime;
+    private float spawnTime; // the counter
+
+    void Start()
+    {
+        
+    }
 
    
     // Update is called once per frame
@@ -16,20 +22,29 @@ public class SpawnCars : MonoBehaviour
     {
         if (Time.time > spawnTime)
         {
-            Spawn();
+             if (Random.value > 0.5f)
+                SpawnLeft();
+            else
+                SpawnRight();
+
+            timeBetweenSpawn = Random.Range(0.5f, 5.0f);
             spawnTime = Time.time + timeBetweenSpawn;
         }
     }
 
-    void Spawn()
+    void SpawnLeft()
     {
-        if (Random.value > 0.5f) // coin flip odds
-            randomX = -0.1f;
-        else
-            randomX = 1.35f;
-
+        xPos = -0.1f;
         float randomY = Random.Range(minY, maxY);
 
-        Instantiate(slowCar, transform.position + new Vector3(randomX, randomY, 0), transform.rotation);
+        Instantiate(fastCar, transform.position + new Vector3(xPos, randomY, 0), transform.rotation);
+    }
+
+     void SpawnRight()
+    {
+        xPos = 1.35f;
+        float randomY = Random.Range(minY, maxY);
+
+        Instantiate(slowCar, transform.position + new Vector3(xPos, randomY, 0), transform.rotation);
     }
 }
