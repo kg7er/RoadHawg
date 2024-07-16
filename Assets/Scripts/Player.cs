@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public float playerSpeed;
     private Rigidbody2D rb;
     private Vector2 playerDirection;
+    private int[] grassPenalty = {0, 5, 15, 25};
    
 
 
@@ -33,7 +34,7 @@ public class Player : MonoBehaviour
     {
         if (collision.tag == "Grass")   
         {
-            ScoreManager.score -= 15;
+            ScoreManager.score -= grassPenalty[ScoreManager.level];
         }
             
     }

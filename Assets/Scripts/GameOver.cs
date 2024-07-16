@@ -18,5 +18,6 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         ScoreManager.score = 0;
+        ScoreManager.level = 0;
     }
 }
