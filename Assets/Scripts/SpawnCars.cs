@@ -28,7 +28,7 @@ public class SpawnCars : MonoBehaviour
 
     void SpawnLeft()
     {
-        xPos = -0.1f;
+        xPos = -0.75f;
         float randomY = Random.Range(minY, maxY);
 
         GameObject newCar = Instantiate(fastCar, transform.position + new Vector3(xPos, randomY, 0), transform.rotation);
@@ -37,7 +37,7 @@ public class SpawnCars : MonoBehaviour
 
      void SpawnRight()
     {
-        xPos = 1.35f;
+        xPos = 0.75f;
         float randomY = Random.Range(minY, maxY);
 
         GameObject newCar = Instantiate(slowCar, transform.position + new Vector3(xPos, randomY, 0), transform.rotation);

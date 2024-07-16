@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 playerDirection;
     private int[] grassPenalty = {0, 5, 15, 25};
+    private int[] bushPenalty = {0, 10, 25, 50};
    
 
 
@@ -36,6 +37,15 @@ public class Player : MonoBehaviour
         {
             ScoreManager.score -= grassPenalty[ScoreManager.level];
         }
+        else if (collision.tag == "Bush")
+        {
+            ScoreManager.score -= bushPenalty[ScoreManager.level];
+        }
+        else if (collision.tag == "Obstacle")
+        {
+            Destroy(this.gameObject);
+        }
+            
             
     }
 }
