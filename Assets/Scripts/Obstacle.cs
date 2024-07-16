@@ -14,7 +14,7 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Border")  // Bottom Border; destroy car obstacle
+        if (collision.tag == "Border" || collision.tag == "Obstacle")  // Bottom Border or another obstacle; destroy car obstacle
         {
             Destroy(this.gameObject);
             ScoreManager.score += 5;

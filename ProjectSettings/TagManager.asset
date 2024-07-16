@@ -7,6 +7,7 @@ TagManager:
   - Border
   - Grass
   - The Score
+  - Obstacle
   layers:
   - Default
   - TransparentFX

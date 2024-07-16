@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     {
         if (collision.tag == "Grass")   
         {
-            ScoreManager.score -= 3;
+            ScoreManager.score -= 15;
         }
             
     }
