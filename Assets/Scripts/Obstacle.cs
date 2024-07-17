@@ -4,26 +4,14 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    private GameObject player;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Border" || collision.tag == "Obstacle")  // Bottom Border or another obstacle; destroy car obstacle
+        if (collision.tag == "Border" || collision.tag == "Obstacle" || collision.tag == "Player")  
+            // Bottom Border or another obstacle or the player
         {
             Destroy(this.gameObject);
             ScoreManager.score += 5;
         } 
-    
-        else if (collision.tag == "Player")
-        {
-            Destroy(player.gameObject);
-        }
-            
     }
 }

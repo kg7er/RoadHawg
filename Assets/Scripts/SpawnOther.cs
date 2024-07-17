@@ -20,7 +20,7 @@ public class SpawnOther : MonoBehaviour
             else
                 SpawnRight();
 
-            timeBetweenSpawn = Random.Range(2f, 5f);
+            timeBetweenSpawn = Random.Range(3f, 18f/ScoreManager.level);
             spawnTime = Time.time + timeBetweenSpawn;
         }
     }

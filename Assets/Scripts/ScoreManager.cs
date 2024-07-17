@@ -22,13 +22,13 @@ public class ScoreManager : MonoBehaviour
             if (score <= 0)
                 score = 0;
                 //===========
-            if (score < 50)
+            if (score < 100)
             {
                 level = 1;
                 //levelText.GetComponent<Text>().color = new Color(224,224,224); //light gray
             }
 
-            else if (score >= 100)
+            else if (score >= 300)
                 {
                     level = 3;
                 //    levelText.GetComponent<Text>().color = new Color(220,20,60); //crimson

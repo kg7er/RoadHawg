@@ -7,8 +7,8 @@ public class Player : MonoBehaviour
     public float playerSpeed;
     private Rigidbody2D rb;
     private Vector2 playerDirection;
-    private int[] grassPenalty = {0, 5, 15, 25};
-    private int[] bushPenalty = {0, 10, 25, 50};
+    private int[] grassPenalty = {0, 5, 10, 15};
+    private int[] bushPenalty = {0, 10, 20, 30};
    
 
 

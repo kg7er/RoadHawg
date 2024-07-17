@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3262bb600880c294f83840d01687806d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bush: {fileID: 7780355667484659911, guid: e30a30a8de7fbcb4a91501325d61241f, type: 3}
+  bush: {fileID: 5700196180005204901, guid: 3eb7953711ba49141b16d75c12b40c4d, type: 3}
   yPos: 5
   xPos: 0
   timeBetweenSpawn: 0

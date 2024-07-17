@@ -10,6 +10,7 @@ public class SpawnCars : MonoBehaviour
     public float xPos;
     public float timeBetweenSpawn;
     private float spawnTime; // the counter
+    
 
     // Update is called once per frame
     void Update()
@@ -21,7 +22,7 @@ public class SpawnCars : MonoBehaviour
             else
                 SpawnRight();
 
-            timeBetweenSpawn = Random.Range(0.5f, 4.0f);
+            timeBetweenSpawn = Random.Range(0.5f, 5.0f);
             spawnTime = Time.time + timeBetweenSpawn;
         }
     }
