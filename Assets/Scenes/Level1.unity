@@ -380,9 +380,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowCar: {fileID: 5731206229201298765, guid: 35b4fe5759b42814c98ae3e41e0f2ee1, type: 3}
   fastCar: {fileID: 5861839489848619523, guid: 51d49d8567e44a240a255a147168fa2f, type: 3}
-  maxY: 3.5
-  minY: 6
   xPos: 0
+  yPos: 0
   timeBetweenSpawn: 0
 --- !u!114 &226697172
 MonoBehaviour:
@@ -756,7 +755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.69489646, g: 0.8679245, b: 0.50356, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1151,7 +1150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934442758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.8, z: 0}
+  m_LocalPosition: {x: -2.15, y: -3.8, z: 0}
   m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1462,7 +1461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.69411767, g: 0.8666667, b: 0.5019608, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
