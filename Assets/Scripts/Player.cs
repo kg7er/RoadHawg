@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         float directionX = Input.GetAxisRaw("Horizontal");
-        playerDirection = new Vector2(directionX, 0).normalized;
+        playerDirection = new Vector2(directionX, 0).normalized; // original
     }
 
     void FixedUpdate()
