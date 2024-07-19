@@ -31,7 +31,7 @@ public class ScoreManager : MonoBehaviour
             else if (score >= 250)
                 {
                     level = 3;
-                    levelText.GetComponent<Text>().color = new Color32(255,100,70,255); // Tomato +- 
+                    levelText.GetComponent<Text>().color = new Color32(255,100,70,255); // Tomato
 
                 }
             else
