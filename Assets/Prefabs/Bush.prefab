@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3670511050783725663, guid: 35b4fe5759b42814c98ae3e41e0f2ee1, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5731206228805761917, guid: 35b4fe5759b42814c98ae3e41e0f2ee1, type: 3}
       propertyPath: m_Name
       value: Bush Sprite
