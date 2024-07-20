@@ -11,7 +11,8 @@ public class ScoreManager : MonoBehaviour
     public Text levelLabel;
     public static int score = 0;
     public static int level = 1;
-    //public string[] levelColor = {"black","white","orange","red"};
+   
+
    
 
     // Update is called once per frame
@@ -38,7 +39,7 @@ public class ScoreManager : MonoBehaviour
                 {
                     level = 2;
                     levelText.GetComponent<Text>().color = new Color32(255,215,0,255); // Gold
-
+    
                 }
 
             scoreText.text = score.ToString();

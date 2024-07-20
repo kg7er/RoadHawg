@@ -9,6 +9,7 @@ TagManager:
   - The Score
   - Obstacle
   - Bush
+  - Fog
   layers:
   - Default
   - TransparentFX
