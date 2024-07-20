@@ -39,11 +39,17 @@ public class SpawnCars : MonoBehaviour
             GameObject newCar = Instantiate(fastCar, transform.position + new Vector3(xPos, yPos, 0), transform.rotation);
             newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.0f, 0.2f);
         }
-        else
+        else if (ScoreManager.level == 2)
         {
-           xPos = Random.Range(-0.6f, -0.8f);
+           xPos = Random.Range(-0.8f, -0.6f);
            GameObject newCar = Instantiate(fastCar, transform.position + new Vector3(xPos, yPos, 0), transform.rotation);
            newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.15f, 0.3f);
+        }
+        else if (ScoreManager.level == 3)
+        {
+           xPos = Random.Range(-0.8f, -0.6f);
+           GameObject newCar = Instantiate(fastCar, transform.position + new Vector3(xPos, yPos, 0), transform.rotation);
+           newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.2f, 0.35f);
         }
      }
     
@@ -58,11 +64,17 @@ public class SpawnCars : MonoBehaviour
             GameObject newCar = Instantiate(slowCar, transform.position + new Vector3(xPos, yPos, 0), transform.rotation);
             newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.1f, 0.3f);
         }
-        else
+        else if (ScoreManager.level == 2)
         {
            xPos = Random.Range(0.6f, 0.8f);
            GameObject newCar = Instantiate(slowCar, transform.position + new Vector3(xPos, yPos, 0), transform.rotation);
-           newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.2f, 0.45f);
+           newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.2f, 0.4f);
+        }
+        else if (ScoreManager.level == 3)
+        {
+           xPos = Random.Range(0.6f, 0.8f);
+           GameObject newCar = Instantiate(slowCar, transform.position + new Vector3(xPos, yPos, 0), transform.rotation);
+           newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.25f, 0.5f);
         }
      }
     
