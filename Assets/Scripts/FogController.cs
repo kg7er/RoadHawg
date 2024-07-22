@@ -16,15 +16,22 @@ public class FogController : MonoBehaviour
     void Update()
     {
         var em = ps.emission;
-        if (ScoreManager.level < 2)
+        var main = ps.main;
+
+        if (ScoreManager.level == 1)
         {
             em.enabled = false;
         }
-        else
+        else if (ScoreManager.level == 2)
         {
             em.enabled = true;
+            main.startLifetime = 4.0f;
         }
-            
+        else if (ScoreManager.level == 3)
+        {
+            em.enabled = true;
+            main.startLifetime = 5.0f;
+        }
         
     }
 }
