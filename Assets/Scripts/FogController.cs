@@ -25,12 +25,12 @@ public class FogController : MonoBehaviour
         else if (ScoreManager.level == 2)
         {
             em.enabled = true;
-            main.startLifetime = 4.0f;
+            main.startLifetime = 3.5f;
         }
         else if (ScoreManager.level == 3)
         {
             em.enabled = true;
-            main.startLifetime = 5.0f;
+            main.startLifetime = 4.50f;
         }
         
     }
