@@ -43,13 +43,13 @@ public class SpawnCars : MonoBehaviour
         {
            xPos = Random.Range(-0.8f, -0.6f);
            GameObject newCar = Instantiate(fastCar, transform.position + new Vector3(xPos, yPos, 0), transform.rotation);
-           newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.15f, 0.3f);
+           newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.15f, 0.35f);
         }
         else if (ScoreManager.level == 3)
         {
            xPos = Random.Range(-0.8f, -0.6f);
            GameObject newCar = Instantiate(fastCar, transform.position + new Vector3(xPos, yPos, 0), transform.rotation);
-           newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.2f, 0.35f);
+           newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.2f, 0.45f);
         }
      }
     
@@ -74,7 +74,7 @@ public class SpawnCars : MonoBehaviour
         {
            xPos = Random.Range(0.6f, 0.8f);
            GameObject newCar = Instantiate(slowCar, transform.position + new Vector3(xPos, yPos, 0), transform.rotation);
-           newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.25f, 0.5f);
+           newCar.GetComponent<Rigidbody2D>().gravityScale = Random.Range(0.3f, 0.5f);
         }
      }
     
